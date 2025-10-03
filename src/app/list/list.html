@@ -1,0 +1,14 @@
+    <h1>Ajout,suppression,modification</h1>
+    <input type="text" [(ngModel)]="text"> <input type="button" value="+" (click)="ajouter()">
+    <ul>
+    @for (todo of todos; track todo.id) 
+    {
+            <li>{{todo.tache}}</li>
+            
+            <input type="button" value="-" (click)="supp(todo.id)" value="delete">
+            
+            <input type="button" value="Modifier" (click)="mod(todo.id)" value="modifier">
+            
+    
+    }
+</ul>
