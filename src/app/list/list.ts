@@ -16,9 +16,11 @@ export class List {
     this.text="";
   }
   supp=(id:Number)=>{
+    
     this.todos = this.todos.filter(todo => todo.id!== id);
-  
   }
+    
+  
   mod=(id:Number)=>{
 
     let x=this.todos.find(tac=>tac.id==id)!;
